@@ -69,62 +69,73 @@
 
     <!-- Main Content -->
     <div class="container">
-      <!--div class="row">
-        <div class="col-lg-8 col-md-10 col-xs-12 mx-auto">
-          <h2 class="section-heading text-center" style="color:#003399;">Download</h2>
-          <div class="container"-->
 	  <div class="row">
-	    <div class="col-lg-8 col-md-10 mx-auto">
-	      <h2 class="section-heading text-center" style="color:#003399;">Download</h2>
-	      <p class="text-center">
-	        LDA installers are available for Windows, Linux and macOS: (this will be changed to RT-DB downloaders)...
+	    <!-- About Section (Left Column) -->
+	    <div class="col-lg-6 col-md-6">
+	      <h2 class="section-heading" style="color:#003399;">About</h2>
+	      <p class="text-justify">
+	        Identifying carbon-carbon double bond (C=C) positions in complex lipids is essential for elucidating physiological and pathological processes. Currently, this is impossible in high-throughput analyses of native lipids without specialized instrumentation that compromises ion yields. Here, we demonstrate automated, chain-specific identification of C=C positions in complex lipids based on the retention time derived from routine reverse-phase chromatography tandem mass spectrometry (RPLC-MS/MS). We introduce LC=CL, a computational solution that utilizes a comprehensive database capturing the elution profile of more than 2,400 complex lipid species, including 1,138 newly reported compounds. Using machine learning, LC=CL provides precise and automated C=C position assignments, adaptable to any suitable chromatographic condition. To illustrate the power of LC=CL, we re-evaluated previously published data and discovered new C=C position-dependent specificity of cytosolic phospholipase A2 (cPLA2). Accordingly, C=C position information is now readily accessible for large-scale high-throughput studies with any MS/MS instrumentation and ion activation method.
+	      </p>
+	    </div>
+	
+	    <!-- Spacer Column for Added Gap -->
+	    <div class="col-lg-1"></div>
+	
+	    <!-- Download Section (Right Column) -->
+	    <div class="col-lg-5 col-md-6">
+	      <h2 class="section-heading" style="color:#003399;">Download</h2>
+	      <p class="text-justify">
+	        Select options to download the appropriate RT-DB file alongside reference data for RT-DB mapping.
 	      </p>
 	
-	      <!-- Download Links Row -->
-	      <div class="d-flex justify-content-center text-center">
-	        <!-- Windows Download Link -->
-	        <div class="mx-2">
-	          <a href="https://cloud.uni-graz.at/s/6M2sx9p7cybG4yF/download/LDA_windows-x64_2_10_1.exe" download>
-	            <span class="fa-stack fa-lg">
-	              <i class="fas fa-circle fa-stack-2x" style="color:#0078D6;"></i>
-	              <i class="fab fa-windows fa-stack-1x fa-inverse"></i>
-	            </span>
-	            <div>Windows</div>
-	          </a>
-	        </div>
+	      <!-- Ion Mode Dropdown -->
+	      <div class="form-group">
+	        <label for="ionMode" class="d-block" style="text-align:left;">Ion Mode:</label>
+	        <select id="ionMode" class="form-control" style="width:100%;">
+	          <option value="negative">Negative</option>
+	          <option value="positive">Positive</option>
+	          <option value="both">Both</option>
+	        </select>
+	      </div>
 	
-	        <!-- Linux Download Link -->
-	        <div class="mx-3">
-	          <a href="https://cloud.uni-graz.at/s/t3Y9gc8dYncWBz3/download/LDA_unix-x64_2_10_1.sh" download>
-	            <span class="fa-stack fa-lg">
-	              <i class="fas fa-circle fa-stack-2x" style="color:#FFBF00;"></i>
-	              <i class="fab fa-linux fa-stack-1x fa-inverse"></i>
-	            </span>
-	            <div>Linux</div>
-	          </a>
-	        </div>
+	      <!-- Chromatography Dropdown -->
+	      <div class="form-group mt-2">
+	        <label for="chromatography" class="d-block" style="text-align:left;">Chromatography:</label>
+	        <select id="chromatography" class="form-control" style="width:100%;">
+	          <option value="30-min">30-min</option>
+	          <option value="60-min">60-min</option>
+	        </select>
+	      </div>
 	
-	        <!-- Mac Download Link -->
-	        <div class="mx-3">
-	          <a href="https://cloud.uni-graz.at/s/bQoEBoNwdbe88XM/download/LDA_macos_2_10_1_ARM.dmg" download>
-	            <span class="fa-stack fa-lg">
-	              <i class="fas fa-circle fa-stack-2x" style="color:#000000;"></i>
-	              <i class="fab fa-apple fa-stack-1x fa-inverse"></i>
-	            </span>
-	            <div>macOS</div>
-	          </a>
-	        </div>
+	      <!-- RT-DB Download Icon -->
+	      <div class="text-center mt-3">
+	        <a id="downloadLink" href="#" download>
+	          <span class="fa-stack fa-2x"> <!-- Increased size -->
+	            <i class="fas fa-circle fa-stack-2x" style="color:#003399;"></i>
+	            <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+	          </span>
+	          <div>RT-DB Download</div>
+	        </a>
+	      </div>
+	
+	      <hr>
+	
+	      <!-- LDA Download with Generic Download Icon -->
+	      <p class="text-justify">
+	        Installers for LDA2 featuring LC=CL are available for Windows, Linux, and macOS at the LDA download page:
+	      </p>
+	      <div class="text-center">
+	        <a href="https://genome.tugraz.at/lccl_review/lda_download.shtml" target="_blank"">
+	          <span class="fa-stack fa-2x">
+	            <i class="fas fa-circle fa-stack-2x" style="color:#003399;"></i>
+	            <i class="fas fa-download fa-stack-1x fa-inverse"></i> <!-- Generic download icon -->
+	          </span>
+	          <div>LDA Download</div>
+	        </a>
 	      </div>
 	    </div>
 	  </div>
-          <hr>
-          <h2 class="section-heading text-center" style="color:#003399;">About</h2>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, (...) 
-          </p>
-        </div>
-      </div>
-    </div>
+	</div>
     <hr>
 
     <!-- Footer -->
@@ -134,7 +145,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="https://github.com/LipidProphet" target="_blank">
+                <a href="https://github.com/ThallingerLab/LDA2" target="_blank">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x" style="color:#003399;"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -147,6 +158,38 @@
         </div>
       </div>
     </footer>
+    
+    
+    <!-- JavaScript for dynamic download link -->
+    <script>
+	  // Paths to different download files based on options
+	  const downloadPaths = {
+	    "negative-30-min": "https://cloud.uni-graz.at/s/Y6gBpb6YKotNee3/download",
+	    "negative-60-min": "https://cloud.uni-graz.at/s/GKJBMeqxx3Hg4Z7/download",
+	    "positive-30-min": "https://cloud.uni-graz.at/s/L6Eyjpr7FsxbbFK/download",
+	    "positive-60-min": "https://cloud.uni-graz.at/s/iMyBAJwRQeG9CHE/download",
+	    "both-30-min": "https://cloud.uni-graz.at/s/gTjDxCAfnMz2jYA/download",
+	    "both-60-min": "https://cloud.uni-graz.at/s/G6nkdD4TaMKgkWX/download",
+	  };
+	
+	  // Function to update the download link
+	  function updateDownloadLink() {
+	    const ionMode = document.getElementById("ionMode").value;
+	    const chromatography = document.getElementById("chromatography").value;
+	    const downloadLink = document.getElementById("downloadLink");
+	
+	    // Construct the key for the path
+	    const key = `${ionMode}-${chromatography}`;
+	    downloadLink.href = downloadPaths[key] || "#";
+	  }
+	
+	  // Event listeners for dropdowns
+	  document.getElementById("ionMode").addEventListener("change", updateDownloadLink);
+	  document.getElementById("chromatography").addEventListener("change", updateDownloadLink);
+	
+	  // Initialize the link on page load
+	  window.onload = updateDownloadLink;
+	</script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
